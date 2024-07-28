@@ -4,7 +4,8 @@ from os import getenv
 def translate(text):
   # prompt = "红头发的高中女孩"
    prompt = text
-   conn = http.client.HTTPSConnection("api.chatanywhere.com.cn")
+   url = getenv("ChatGPT_API_URL")
+   conn = http.client.HTTPSConnection(url)
    API_KEY = getenv("ChatGPT_API_KEY")
    API_KEY = 'Bearer %s'%API_KEY
    payload = json.dumps({
