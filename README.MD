@@ -23,6 +23,8 @@
         ①接收String格式的内容，通过ChatGPT翻译成英文
         
             Tips:需要添加环境变量ChatGPT_API_KEY，变量值为你的API密钥。
+                 
+                 需要添加环境变量ChatGPT_API_URL，变量值为你的API网址。
             
                 或在代码内填入密钥(不推荐)
 
