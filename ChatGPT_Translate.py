@@ -8,7 +8,6 @@ def translate(text):
    API_KEY = getenv("ChatGPT_API_KEY")
    if URL or API_KEY is None:
      print("未设置URL或API_KEY变量！\nThe URL or API_KEY variable is not set!")
-     exit(1)
    conn = http.client.HTTPSConnection(URL)
    API_KEY = 'Bearer %s'%API_KEY
    payload = json.dumps({
